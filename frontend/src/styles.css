@@ -24,6 +24,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0.25rem 0 0;
+  font-size: 0.92rem;
+  color: #334155;
 }
 
 button {
@@ -58,6 +69,10 @@ button:disabled {
   overflow: auto;
 }
 
+.panel h2 {
+  margin-top: 0;
+}
+
 .panel ul {
   list-style: none;
   margin: 0;
@@ -87,5 +102,10 @@ button:disabled {
 @media (max-width: 900px) {
   .content {
     grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
